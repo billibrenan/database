@@ -1,4 +1,4 @@
-<?class DB {
+﻿<?class DB {
 
     protected static $_instance;  //экземпляр объекта
 
@@ -10,7 +10,7 @@
     }
 
     private  function __construct() { // конструктор отрабатывает один раз при вызове DB::getInstance();
-        echo "<br/><em>1.  Connection";
+        echo "<br/><em>1.  Connect";
         //подключаемся к БД
         $this->connect = mysql_connect(HOST, USER, PASSWORD) or die("Невозможно установить соединение".mysql_error());
         // выбираем таблицу
